@@ -1,6 +1,6 @@
 /* src/pages/Home.css */
 .home-container {
-    background-image: url('/image/background.jpg');
+    background-image: url('/public/image/background.jpg');
     background-size: cover;
     background-position: center;
     min-height: 100vh;

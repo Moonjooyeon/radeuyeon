@@ -84,7 +84,7 @@ html, body {
 }
 
 .day-header {
-    background-image: url('/image/date.png');
+    background-image: url('/public/image/date.png');
     background-size: cover;
     background-position: center;
     width: 100%;
