@@ -1,0 +1,119 @@
+/* AuthBox.css */
+
+.auth-box {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 14px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    font-family: 'Pretendard', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+.auth-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px; /* 요소 간 간격 조절 */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.auth-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.auth-tabs button {
+    flex: 1;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.auth-tabs button.active {
+    border-bottom: 3px solid #4682B4;
+    color: #222;
+}
+
+.tab-underline {
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    background-color: #4682B4;
+    transition: transform 0.3s ease;
+}
+
+.auth-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-form,
+.login-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 16px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.signup-form label,
+.login-form label {
+    font-size: 0.9rem;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form input,
+.signup-form select,
+.login-form input {
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.signup-form button,
+.login-form button {
+    align-self: center;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #f8bfc5;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.signup-form button:hover,
+.login-form button:hover {
+    background-color: #f49aa1;
+}

@@ -1,0 +1,60 @@
+.gacha-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.gacha-quote-text {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Pretendard', sans-serif;
+    z-index: 10000;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: quoteRiseIn 1.2s ease-out forwards;
+    position: relative;
+}
+
+@keyframes quoteRiseIn {
+    to {
+        opacity: 1;
+        transform: translateY(0); /* 위로 이동하며 등장 */
+    }
+}
+
+.quote-author {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ccc;
+    z-index: 10000;
+}
+
+/* ⬇ 하얀 선 아래에 추가 */
+.quote-line {
+    width: 80%;
+    max-width: 1000px;
+    height: 2px;
+    background-color: white;
+    margin: 20px auto 0;
+    opacity: 0;
+    z-index: 10000;
+    animation: lineFadeIn 1.2s ease-out forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes lineFadeIn {
+    to {
+        opacity: 1;
+    }
+}
+

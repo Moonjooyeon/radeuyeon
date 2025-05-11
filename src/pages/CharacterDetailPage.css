@@ -1,0 +1,108 @@
+.character-detail-container {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.character-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* ✅ 아래로 붙이기 */
+    position: relative;
+}
+
+.character-image-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    z-index: 1;
+    max-height: 90%;
+    overflow: hidden;
+}
+
+.character-image {
+    height: 120vh;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.character-sidebar {
+    width: 250px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    font-family: 'Pretendard', sans-serif;
+}
+
+.back-button {
+    font-size: 16px;
+    color: #888;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.character-id {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-list li.active,
+.menu-list li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.character-content-box h2 {
+    margin-bottom: 16px;
+    font-size: 30px;
+}
+
+.character-content-box p {
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+.character-content-box * {
+    margin: 0;
+}
+
+.character-content-box {
+    align-self: flex-start; /* ✅ 오른쪽 정렬 */
+    text-align: left; /* 혹은 center도 가능 */
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 12px;
+    width: 40%;
+    height: 100%;
+    max-width: 550px;
+    z-index: 2;
+}
