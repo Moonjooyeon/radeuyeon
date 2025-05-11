@@ -4,6 +4,7 @@ import Banner from '../components/Banner';
 import DayBox from '../components/DayBox';
 import LatestPosts from '../components/LatestPosts';
 import AuthBox from '../components/AuthBox';
+import './responsive.css';
 import './Home.css'; // 페이지 전용 CSS 추가
 
 export default function Home() {

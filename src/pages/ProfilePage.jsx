@@ -1,6 +1,7 @@
 import './ProfilePage.css';
 import CharacterCardWrapper from '../components/CharacterCardWrapper';
 import { useEffect, useState, useRef } from 'react';
+import './responsive.css';
 
 
 export default function ArtPage() {
